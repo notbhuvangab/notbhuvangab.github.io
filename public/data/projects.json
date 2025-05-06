@@ -1,0 +1,21 @@
+
+[
+    {   
+        "projectid" : "dbQualityFusion",
+        "title": "dbQualityFusion",
+        "description": "Developed an AI-driven metadata quality validation tool that auto-generates YAML configurations for DBT by analyzing schema information and profiling stats. Integrated with OpenAI and LangChain to drive test suggestions using RAG (Retrieval-Augmented Generation)",
+        "image": "/dbQualityFusion.png?height=200&width=400"
+    },
+    {   
+        "projectid" : "mlhardware",
+        "title": "A Comparative Review and Performance Analysis of ML Specific Hardware",
+        "description": "Benchmarked across NVIDIA GPUs, Intel CPUs, and Google TPUs on representative deep-learning workloads, revealing up to 15% variation in throughput and 12% in energy efficiency.",
+        "image": "/mlhardware.png?height=200&width=400"
+    },
+    {   
+        "projectid" : "attendanceManagementSystem",
+        "title": "Attendance Management System",
+        "description": "Architected a real-time, two-stage pipeline: MTCNN for face detection/alignment and FaceNet embeddings classified via an SVM, achieving ≥95% recognition accuracy under occlusion, pose variance, and low-light conditions.",
+        "image": "/atm.jpeg?height=200&width=400"
+    }
+]

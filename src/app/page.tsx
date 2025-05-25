@@ -17,6 +17,11 @@ export default function Home() {
                 </a>
               </li>
               <li>
+                <a href="#experience" className="text-gray-300 hover:text-green-400 transition duration-300">
+                  Experience
+                </a>
+              </li>
+              <li>
                 <a href="#projects" className="text-gray-300 hover:text-green-400 transition duration-300">
                   Projects
                 </a>
@@ -73,8 +78,73 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Experience Section */}
+      {/*Need to add a promotion type of continuation for the OvalEdge experience where I was promoted from Software Engineer Intern to Full Time software engineer , some sort of lines between those two experiences*/}
+
+      <section id="experience" className="bg-gray-800 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-extrabold text-green-400">Experience</h2>
+          <div className="mt-12 relative">
+            <div className="flex flex-col space-y-6">
+              {[
+                {
+                  title: "Graduate Research and Teaching Assistant",
+                  company: "UMass Dartmouth",
+                  duration: "Jan 2024 - May 2025",
+                  description: "Not so boring LLM Safety research and sometimes conduct lab sessions/office hours for students.",
+                  image: "/umass.webp?height=200&width=200",
+                },
+                {
+                  title: "Software Engineer ( Data and Operational AI)",
+                  company: "OvalEdge",
+                  duration: "January 2022 - July 2023",
+                  description: "Contributed to the core backend of a data governance platform supporting large-scale enterprise metadata management, access control, and AI-enabling workflows.",
+                  image: "/ovaledge.png?height=200&width=400",
+                },
+                {
+                  title: "Software Developer Intern",
+                  company: "GeeXpress Logistics",
+                  duration: "June 2021 - December 2021",
+                  description: "Freelance developer turned Intern, collaborated with a team of interns to develop a logistics platform, from scratch to deployment, using React.",
+                  image: "/geexpress.png?height=200&width=400",
+                },
+               
+              ].map((experience, index) => (
+                <div key={index} className="bg-gray-900 rounded-lg shadow-lg p-6 transition duration-100 hover:shadow-green-400/30 hover:scale-102 flex flex-col md:flex-row items-start ">
+                  
+                  <Image
+                    src={experience.image}
+                    alt="Experience"
+                    width={200}
+                    height={200} // Adjust height as needed
+                    className="w-50 h-[200px] rounded-lg"></Image>
+                    
+                  <div className="flex-1 ml-6">
+                  <h3 className="text-xl font-semibold text-green-400">{experience.title}</h3>
+                  {/* <p className="mt-2 text-gray-300">{experience.company}</p> */}
+                  <p className="mt-1 text-gray-500 ">{experience.duration}</p>
+                  </div>
+                  {/* Add spaciing from second column */}
+                  <div className="flex-1 ml-6">
+                  <p className="mt-4 text-gray-300 ">{experience.description}</p>
+                  </div>
+                  <div className="mt-4">
+                    <a
+                      href="#"
+                      className="text-green-400 hover:text-green-300 transition duration-300"
+                    >
+                      Learn more →
+                    </a>
+                </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
             {/* Projects Section */}
-            <section id="projects" className="bg-gray-800 py-20">
+          <section id="projects" className="bg-gray-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-extrabold text-green-400">My Projects</h2>
           <div className="mt-12 relative">
@@ -82,7 +152,7 @@ export default function Home() {
               {projectsData.map((project) => (
                 <div
                   key={project.projectid}
-                  className="flex-none w-[400px] bg-gray-700 rounded-lg shadow-lg transition duration-300 hover:shadow-green-400/30 hover:scale-105"
+                  className="flex-none w-[400px] bg-gray-800 rounded-lg shadow-lg transition duration-300 hover:shadow-green-400/30 hover:scale-105"
                 >
                   <Image
                     src={project.image}
@@ -113,14 +183,14 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="bg-gray-900 py-20">
+      <section id="skills" className="bg-gray-800 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-extrabold text-green-400">Skills</h2>
           <div className="mt-12 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
             {["React", "Next.js", "JavaScript", "TypeScript", "HTML", "CSS", "Node.js", "Git"].map((skill) => (
               <div
                 key={skill}
-                className="bg-gray-800 overflow-hidden rounded-lg shadow-md p-6 text-center transition duration-300 hover:shadow-green-400/30 hover:scale-105"
+                className="bg-gray-900 overflow-hidden rounded-lg shadow-md p-6 text-center transition duration-300 hover:shadow-green-400/30 hover:scale-105"
               >
                 <div className="text-lg font-semibold text-green-400">{skill}</div>
               </div>
@@ -130,7 +200,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-gray-800 py-20">
+      {/* <section id="contact" className="bg-gray-900 py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-extrabold text-green-400 text-center">Contact Me</h2>
           <form className="mt-12 space-y-8">
@@ -177,13 +247,13 @@ export default function Home() {
             </div>
           </form>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-800 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 mb-4 md:mb-0">© 2023 Your Name. All rights reserved.</div>
+            <div className="text-gray-400 mb-4 md:mb-0">© 2023 Bhuvan Gabbita. All rights reserved.</div>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-green-400 transition duration-300">
                 <FaGithub className="h-6 w-6" />

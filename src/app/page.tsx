@@ -250,18 +250,18 @@ export default function Home() {
       </section> */}
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12">
+      <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 mb-4 md:mb-0">© 2023 Bhuvan Gabbita. All rights reserved.</div>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-green-400 transition duration-300">
+              <a href="https://github.com/notbhuvangab" className="text-gray-400 hover:text-green-400 transition duration-300">
                 <FaGithub className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-green-400 transition duration-300">
+              <a href="https://www.linkedin.com/in/bhuvan-gabbita/" className="text-gray-400 hover:text-green-400 transition duration-300">
                 <FaLinkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-green-400 transition duration-300">
+              <a href="mailto:gbhuvanhyd@gmail.com" className="text-gray-400 hover:text-green-400 transition duration-300">
                 <FaEnvelope className="h-6 w-6" />
               </a>
             </div>

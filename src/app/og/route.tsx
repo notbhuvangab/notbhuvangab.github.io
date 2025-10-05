@@ -4,9 +4,9 @@ import { metaData } from "../lib/config";
 // Required for Next.js static export
 export const dynamic = "force-static";
 
-export function GET(request: Request) {
-  let url = new URL(request.url);
-  let title = url.searchParams.get("title") || metaData.title;
+export function GET() {
+  // For static export, use the default title from config
+  const title = metaData.title;
 
   return new ImageResponse(
     (

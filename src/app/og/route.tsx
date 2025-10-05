@@ -1,6 +1,9 @@
 import { ImageResponse } from "next/og";
 import { metaData } from "../lib/config";
 
+// Required for Next.js static export
+export const dynamic = "force-static";
+
 export function GET(request: Request) {
   let url = new URL(request.url);
   let title = url.searchParams.get("title") || metaData.title;

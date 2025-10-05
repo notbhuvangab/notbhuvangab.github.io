@@ -2,6 +2,9 @@ import { Feed } from "feed";
 import { metaData } from "../../lib/config";
 import { NextResponse } from "next/server";
 
+// Required for Next.js static export
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
   return [
     { format: "rss.xml" },

@@ -1,6 +1,9 @@
 import { MetadataRoute } from "next";
 import { metaData } from "./lib/config";
 
+// Required for Next.js static export
+export const dynamic = "force-static";
+
 const BaseUrl = metaData.baseUrl.endsWith("/")
   ? metaData.baseUrl
   : `${metaData.baseUrl}/`;

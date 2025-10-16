@@ -23,7 +23,7 @@ export function getWorkExperiences(): WorkExperience[] {
     {
       slug: "gra-umassd",
       metadata: {
-        role: "RA/TA",
+        role: "Research Engineer/TA",
         company: "UMass Dartmouth",
         startDate: "2024-01-16",
         endDate: "2025-05-08",
@@ -53,7 +53,7 @@ export function getWorkExperiences(): WorkExperience[] {
     {
       slug: "aby-exp",
       metadata: {
-        role: "Software Engineer Intern",
+        role: "Software Engineer",
         company: "ABY Farmers",
         startDate: "2021-01-15",
         endDate: "2021-12-18",
@@ -66,7 +66,7 @@ export function getWorkExperiences(): WorkExperience[] {
     {
       slug: "ge-exp",
       metadata: {
-        role: "Software Engineer Intern",
+        role: "Software Engineer Intern(contract)",
         company: "Ge Express Logistics",
         startDate: "2020-05-15",
         endDate: "2020-08-18",

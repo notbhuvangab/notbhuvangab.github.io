@@ -10,7 +10,7 @@ export const projects: Project[] = [
   {
     title: "Finmate - AI Powered Company Benefits and Finances",
     year: 2025,
-    stack: "Typescript | AWS(Lambda,Bedrock,Agent) | RAG |  ",
+    stack: "React | AWS(Lambda,Bedrock,Agents) | RAG  ",
     description: [" AI-powered financial assistant that guides new employees through benefits selection",
                   "Specifically worked on Internal RAG for personal knowledgebase and content retrieval/indexing."],
     url: "https://github.com/SujayCh07/codelinc10",

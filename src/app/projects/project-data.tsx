@@ -8,8 +8,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Finmate - AI Powered Company Benefits and Finances",
+    year: 2025,
+    stack: "Typescript | AWS(Lambda,Bedrock,Agent) | RAG |  ",
+    description: [" AI-powered financial assistant that guides new employees through benefits selection",
+                  "Specifically worked on Internal RAG for personal knowledgebase and content retrieval/indexing."],
+    url: "https://github.com/SujayCh07/codelinc10",
+  },
+  {
+    title: "gigglz - GenZ audiobooks from EPUBs",
+    year: 2025,
+    stack: "Python | EPUB | Gemini AI| ElevenLabs ",
+    description: ["EPUB file ->  audios of all chapters, summarized with fun, modern and Gen-Z lingo.",
+                  "Ranking algorithm to create chapter context across generation of content chunks."],
+    url: "https://github.com/notbhuvangab/gigglz",
+  },
+  {
     title: "Jobs Monitoring Pipeline",
-    year: 2024,
+    year: 2025,
     stack: "fastapi | langgraph | reactjs | sqlite",
     description: ["Built AI-driven job fetching Agent using langgraph and fastapi.",
                   "Designed interactive dashboard to display jobs that fit the user's profile."],

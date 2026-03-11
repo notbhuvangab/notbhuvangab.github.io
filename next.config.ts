@@ -3,10 +3,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  ignoreDuringBuilds: true,
-  reactComponentAnnotation: {
-   enabled: process.env.NODE_ENV === 'development',
- },
   async rewrites() {
     return [
       {

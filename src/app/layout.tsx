@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Alata } from "next/font/google";
+import { Courier_Prime } from "next/font/google";
 import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -8,8 +9,8 @@ import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./lib/config";
 
-const alata = Alata({ subsets: ["latin"], weight: "400" });
-
+// const alata = Alata({ subsets: ["latin"], weight: "400" });
+const courierNew = Courier_Prime({ subsets: ["latin"], weight: "400" });
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
   title: {
@@ -52,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${alata.className}`}>
+    <html lang="en" className={`${courierNew.className}`} suppressHydrationWarning>
       <head>
         <link
           rel="alternate"
